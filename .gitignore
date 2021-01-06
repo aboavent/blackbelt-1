@@ -1,0 +1,14 @@
+ # Mac files
+.DS_Store
+
+# Folders
+.idea
+.ipynb_checkpoints
+.vscode
+
+# Compiled files
+*.csv
+
+# Module directory
+
+# Sensitive Files
