@@ -54,7 +54,7 @@ Parameters:
     ConstraintDescription: Must be lowercase or numbers with a length of 1-15 characters.
   NotebookInstanceType:
     Type: String
-    Default: ml.t3.medium
+    Default: ml.m5.xlarge
     Description: Select Instance type for the SageMaker Notebook
     AllowedValues:
       - ml.t3.medium
