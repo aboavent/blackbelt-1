@@ -65,7 +65,7 @@ Parameters:
       - ml.m5.2xlarge
     ConstraintDescription: Must select a valid notebook instance type.
   GitHubUser:
-    Default: aws-samples
+    Default: pm3lvin
     Description: Your GitHub username
     Type: String
   GitHubRepo:
