@@ -74,7 +74,7 @@ Parameters:
     Type: String
     Description: Name of the GitHub repository
   GitHubBranch:
-    Default: master
+    Default: main
     Type: String
     Description: Name of the branch the code is located
   GitHubToken:
