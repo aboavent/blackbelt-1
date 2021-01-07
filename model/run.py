@@ -37,14 +37,14 @@ def get_training_params(
     )
     # Set the hyperparameters overriding with any defaults
     params = {
-        "max_depth": "9",
-        "eta": "0.2",
-        "gamma": "4",
-        "min_child_weight": "300",
-        "subsample": "0.8",
-        "objective": "reg:linear",
-        "early_stopping_rounds": "10",
-        "num_round": "100",
+        "alpha":"0.2",
+        "max_depth":"10",
+        "eta":"0.12",
+        "gamma":"2.0",
+        "min_child_weight":"8.5",
+        "subsample":"0.6",
+        "objective":"binary:logistic",
+        "num_round":"20",
     }
     xgb.set_hyperparameters(**{**params, **hyperparameters})
 

@@ -44,7 +44,8 @@ Metadata:
 
 Parameters:
   ModelName:
-    Default: nyctaxi
+    # Default: nyctaxi
+    Default: bb-proj
     Type: String
     Description: Name of the model
     MinLength: 1
@@ -68,7 +69,8 @@ Parameters:
     Description: Your GitHub username
     Type: String
   GitHubRepo:
-    Default: amazon-sagemaker-safe-deployment-pipeline
+    # Default: amazon-sagemaker-safe-deployment-pipeline
+    Default: blackbelt
     Type: String
     Description: Name of the GitHub repository
   GitHubBranch:
@@ -482,7 +484,8 @@ Resources:
               - s3:ListBucket
               - s3:PutObject
             Resource:
-              - arn:aws:s3:::nyc-tlc/*
+              # - arn:aws:s3:::nyc-tlc/*
+              - arn:aws:s3:::bb-tlc/*
               - !Sub arn:aws:s3:::${ArtifactBucket}/*
               - !Sub arn:aws:s3:::${ArtifactBucket}
               - !Sub arn:aws:s3:::sagemaker-${AWS::Region}-${AWS::AccountId}/*
