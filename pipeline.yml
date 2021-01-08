@@ -189,8 +189,7 @@ Resources:
       LifecycleConfigName: !GetAtt NotebookInstanceLifecycleConfig.NotebookInstanceLifecycleConfigName
       DefaultCodeRepository: !GetAtt SageMakerCodeRepository.CodeRepositoryName
       KmsKeyId: !Ref KMSKey
-      # RoleArn: !GetAtt SageMakerRole.Arn
-      RoleArn: arn:aws:iam::880038709331:role/service-role/AmazonSageMaker-ExecutionRole-20201125T153291
+      RoleArn: !GetAtt SageMakerRole.Arn
 
   BuildProject:
     Type: AWS::CodeBuild::Project
